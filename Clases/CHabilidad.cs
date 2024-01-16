@@ -17,11 +17,22 @@ namespace Pruebas_35.Clases
 
         public Habilidad(string nombre, int nivelRequerido, TipoHabilidad clase, ClasePersonaje clasePersonajeAsociada)
         {
+            if (string.IsNullOrWhiteSpace(nombre))
+            {
+                throw new ArgumentException("El nombre no puede estar vacío o en blanco.", nameof(nombre));
+            }
+
+
+
             Id = Guid.NewGuid();
             Nombre = nombre;
             NivelRequerido = nivelRequerido;
             Clase = clase;
             ClasePersonajeAsociada = clasePersonajeAsociada;
+
+
+           
+
         }
     }
 }
