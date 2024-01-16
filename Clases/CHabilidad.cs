@@ -15,7 +15,15 @@ namespace Pruebas_35.Clases
         public TipoHabilidad Clase { get; private set; }
         public ClasePersonaje ClasePersonajeAsociada { get; private set; }
 
-       
+        public Habilidad(string nombre, int nivelRequerido, TipoHabilidad clase, ClasePersonaje clasePersonajeAsociada)
+        {
+            Id = Guid.NewGuid();
+            Nombre = nombre;
+            NivelRequerido = nivelRequerido;
+            Clase = clase;
+            ClasePersonajeAsociada = clasePersonajeAsociada;
+        }
     }
-
 }
+
+
