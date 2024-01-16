@@ -15,7 +15,7 @@ namespace Pruebas_35.Clases
         public TipoHabilidad Clase { get; private set; }
         public ClasePersonaje ClasePersonajeAsociada { get; private set; }
 
-        public Habilidad(string nombre, int nivelRequerido, TipoHabilidad clase, ClasePersonaje clasePersonajeAsociada)
+        public Habilidad(string id, string nombre, int nivelRequerido, TipoHabilidad clase, ClasePersonaje clasePersonajeAsociada)
         {
             if (string.IsNullOrWhiteSpace(nombre))
             {
