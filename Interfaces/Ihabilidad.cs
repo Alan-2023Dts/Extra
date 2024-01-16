@@ -24,7 +24,7 @@ namespace Pruebas_35.Interfaces.Clases
 
     public interface IHabilidad
     {
-        string Id { get; }
+        Guid Id { get; }
         string Nombre { get; }
         int NivelRequerido { get; }
 
@@ -32,6 +32,10 @@ namespace Pruebas_35.Interfaces.Clases
 
         ClasePersonaje ClasePersonajeAsociada { get; }
 
+
+
+    
+        }
 
     }
 
