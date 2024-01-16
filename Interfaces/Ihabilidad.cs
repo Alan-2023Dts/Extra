@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace Pruebas_35.Interfaces.Clases
 {
-    internal interface Interface1
+  
+
+    public interface IHabilidad
     {
+        string Id { get; }
+        string Nombre { get; }
+        int NivelRequerido { get; }
+     
     }
+
 }
