@@ -22,6 +22,10 @@ namespace Pruebas_35.Clases
                 throw new ArgumentException("El nombre no puede estar vacío o en blanco.", nameof(nombre));
             }
 
+            if (nivelRequerido < 1)
+            {
+                throw new ArgumentException("El nivel requerido debe ser mayor o igual a 1.", nameof(nivelRequerido));
+            }
 
 
             Id = Guid.NewGuid();
