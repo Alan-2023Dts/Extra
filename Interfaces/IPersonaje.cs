@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace Pruebas_35.Interfaces
 {
-    internal interface Interface1
-    {
-    }
+  
+        public interface IPersonaje
+        {
+            string Nombre { get; }
+            int Nivel { get; }
+            int Vida { get; }
+            int Mana { get; }
+
+            void RecibirDano(int dano);
+            void RecibirCuracion(int curacion);
+            void UsarMana(int costoMana);
+        }
+
+    
+
 }
