@@ -13,7 +13,15 @@ namespace Pruebas_35.Interfaces.Clases
         Pasiva
     }
 
-   
+    public enum ClasePersonaje
+    {
+        
+        Guerrero,
+        Mago,
+        Arquero
+    }
+
+
     public interface IHabilidad
     {
         string Id { get; }
@@ -21,6 +29,9 @@ namespace Pruebas_35.Interfaces.Clases
         int NivelRequerido { get; }
 
         TipoHabilidad Clase { get; }
+
+        ClasePersonaje ClasePersonajeAsociada { get; }
+
 
     }
 
